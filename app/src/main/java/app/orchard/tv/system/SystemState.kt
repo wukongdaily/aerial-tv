@@ -236,6 +236,11 @@ object SystemProbe {
     private fun settingsActivityIntent(context: Context): Intent =
         firstResolvable(
             context,
+            // Fire TV (AFTMM, Fire OS 6.7): ACTION_SETTINGS resolves to a compliance stub
+            // (com.amazon.tv.settings.v2/.compliance.CTSDummySettingsHandler) that closes at once,
+            // and the settings hub lives inside the launcher. Its MainSettingsActivity opens the
+            // full settings grid; verified on the device.
+            Intent(Intent.ACTION_MAIN).setComponent(ComponentName("com.amazon.tv.launcher", "com.amazon.tv.launcher.ui.MainSettingsActivity")),
             Intent("com.xiaomi.mitv.settings.SETTINGS").setComponent(ComponentName("com.xiaomi.mitv.settings", "com.xiaomi.mitv.settings.entry.MainActivity")),
             // Haier 65U2 (YunOS 9, Android 9) answers ACTION_SETTINGS with a Bluetooth page that
             // crashes as it opens; its own settings are here (the reporter opened them, issue #458).
