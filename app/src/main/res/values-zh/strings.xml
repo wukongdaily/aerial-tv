@@ -309,4 +309,21 @@
     <string name="kids_blocked">「%s」不在这个模式里</string>
     <string name="kids_warn">还能看 %d 分钟</string>
     <string name="kids_warn_break">%d 分钟后休息一下</string>
+
+    <!-- Built-in gradient wallpapers (wallpaper/Gradients.kt); resolved by the framework,
+         so a Traditional Chinese set no longer sees the Simplified names. -->
+    <string name="grad_hills_dawn">山丘 · 黎明</string>
+    <string name="grad_hills_dusk">山丘 · 暮色</string>
+    <string name="grad_hills_mist">山丘 · 晨雾</string>
+    <string name="grad_hills_night">山丘 · 夜</string>
+    <string name="grad_dunes_gold">沙丘 · 金色</string>
+    <string name="grad_dunes_moon">沙丘 · 月夜</string>
+    <string name="grad_sea_sunset">海 · 日落</string>
+    <string name="grad_sea_clear">海 · 晴空</string>
+    <string name="grad_waves_blue">波浪 · 深蓝</string>
+    <string name="grad_waves_coral">波浪 · 珊瑚</string>
+    <string name="grad_waves_violet">波浪 · 紫罗兰</string>
+    <string name="grad_glow_pink">光晕 · 柔粉</string>
+    <string name="grad_aurora">光晕 · 极光</string>
+    <string name="grad_glow_lime">光晕 · 青柠</string>
 </resources>

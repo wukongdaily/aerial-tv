@@ -310,4 +310,21 @@
     <string name="kids_blocked">%s is not allowed here</string>
     <string name="kids_warn">%d min of TV left</string>
     <string name="kids_warn_break">A break in %d min</string>
+
+    <!-- Built-in gradient wallpapers (wallpaper/Gradients.kt); resolved by the framework,
+         so a Traditional Chinese set no longer sees the Simplified names. -->
+    <string name="grad_hills_dawn">Hills, Dawn</string>
+    <string name="grad_hills_dusk">Hills, Dusk</string>
+    <string name="grad_hills_mist">Hills, Mist</string>
+    <string name="grad_hills_night">Hills, Night</string>
+    <string name="grad_dunes_gold">Dunes, Gold</string>
+    <string name="grad_dunes_moon">Dunes, Moonlight</string>
+    <string name="grad_sea_sunset">Sea, Sunset</string>
+    <string name="grad_sea_clear">Sea, Clear Sky</string>
+    <string name="grad_waves_blue">Waves, Blue</string>
+    <string name="grad_waves_coral">Waves, Coral</string>
+    <string name="grad_waves_violet">Waves, Violet</string>
+    <string name="grad_glow_pink">Glow, Pink</string>
+    <string name="grad_aurora">Glow, Aurora</string>
+    <string name="grad_glow_lime">Glow, Lime</string>
 </resources>
