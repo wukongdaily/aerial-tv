@@ -284,6 +284,7 @@ curl -fsSL https://aerial.qust.me/install.sh | TV=192.168.1.20 bash -s restore
 | 志影 / 喜瑞 | HS350 投影仪（海思，YunOS） | Android 9 | ⚠️ 固件强停退到后台的第三方 App，从别的 App 按主页键要 10–30 秒才回 Aerial；不是用安装脚本装的要补两条授权（[#853](https://github.com/pengchujin/aerial-tv/issues/853)） |
 | 其他盒子 | CM311-1（改版 ATV）、PPTV K55U27、HK1 Box（S905X3） | Android 9 | ✅ HK1 Box 设成默认桌面即可（[#838](https://github.com/pengchujin/aerial-tv/issues/838)） |
 | 斐讯 | T1 盒子（S912） | Android 7.1.2 | ✅ 第一排往下进全部 App 时有点卡，可在 个性化 → 效果 选「流畅」（[#876](https://github.com/pengchujin/aerial-tv/issues/876)） |
+| 亚马逊 | Fire TV Stick 4K（AFTMM） | Fire OS 6.7 / Android 7.1 | ⚠️ 能装、能日常用；固件拒绝绑定第三方无障碍，主页键接管不了，要外部弹回引擎。右上角设置按钮已修（[笔记](docs/devices/amazon-fire-tv.md)） |
 
 - **Android 4.0–4.4**：用 [Aerial Lite](#lite)（第一版，测试版）。
 - **不支持**：LG webOS、三星 Tizen、华为鸿蒙智慧屏，以及 Android 4.0 以前的系统。
