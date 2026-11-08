@@ -300,4 +300,24 @@
     <string name="kids_blocked">«%s» мұнда қолжетімсіз</string>
     <string name="kids_warn">%d мин қалды</string>
     <string name="kids_warn_break">%d минуттан кейін үзіліс</string>
+
+    <!-- Kept in English for now: before wallpaper/Gradients.kt read these from resources, kk
+         saw the same English literals, so nothing changes on a Kazakh set. A native speaker
+         should replace them; wp_auto_note has the wording the app uses for the auto wallpaper. -->
+    <string name="wp_my_photo">My Photo</string>
+    <string name="wp_follow_app">Follow App</string>
+    <string name="grad_hills_dawn">Hills, Dawn</string>
+    <string name="grad_hills_dusk">Hills, Dusk</string>
+    <string name="grad_hills_mist">Hills, Mist</string>
+    <string name="grad_hills_night">Hills, Night</string>
+    <string name="grad_dunes_gold">Dunes, Gold</string>
+    <string name="grad_dunes_moon">Dunes, Moonlight</string>
+    <string name="grad_sea_sunset">Sea, Sunset</string>
+    <string name="grad_sea_clear">Sea, Clear Sky</string>
+    <string name="grad_waves_blue">Waves, Blue</string>
+    <string name="grad_waves_coral">Waves, Coral</string>
+    <string name="grad_waves_violet">Waves, Violet</string>
+    <string name="grad_glow_pink">Glow, Pink</string>
+    <string name="grad_aurora">Glow, Aurora</string>
+    <string name="grad_glow_lime">Glow, Lime</string>
 </resources>

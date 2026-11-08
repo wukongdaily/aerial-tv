@@ -300,4 +300,22 @@
     <string name="kids_blocked">«%s» тут недоступний</string>
     <string name="kids_warn">Лишилося %d хв</string>
     <string name="kids_warn_break">Перерва за %d хв</string>
+
+    <!-- Wallpaper labels and the built-in gradient names, added with wallpaper/Gradients.kt. -->
+    <string name="wp_my_photo">Моя фотографія</string>
+    <string name="wp_follow_app">Колір застосунку</string>
+    <string name="grad_hills_dawn">Холми, світанок</string>
+    <string name="grad_hills_dusk">Холми, сутінки</string>
+    <string name="grad_hills_mist">Холми, туман</string>
+    <string name="grad_hills_night">Холми, ніч</string>
+    <string name="grad_dunes_gold">Дюни, золото</string>
+    <string name="grad_dunes_moon">Дюни, місячне сяйво</string>
+    <string name="grad_sea_sunset">Море, захід</string>
+    <string name="grad_sea_clear">Море, ясне небо</string>
+    <string name="grad_waves_blue">Хвилі, глибока синь</string>
+    <string name="grad_waves_coral">Хвилі, корал</string>
+    <string name="grad_waves_violet">Хвилі, фіалка</string>
+    <string name="grad_glow_pink">Сяйво, ніжно-рожеве</string>
+    <string name="grad_aurora">Сяйво, аврора</string>
+    <string name="grad_glow_lime">Сяйво, лайм</string>
 </resources>
