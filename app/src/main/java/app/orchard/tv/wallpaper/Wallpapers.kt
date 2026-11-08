@@ -5,6 +5,7 @@ import android.os.Build
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.util.Log
+import app.orchard.tv.R
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
@@ -752,13 +753,13 @@ object Wallpapers {
         val builtins = Gradients.presets.map { Wallpaper("grad:${it.key}", WallpaperKind.Builtin, if (zh) it.nameZh else it.nameEn) }
         val photos = (photoDir.listFiles { f -> f.extension == "jpg" } ?: emptyArray())
             .sortedByDescending { it.lastModified() }
-            .map { Wallpaper("photo:${it.nameWithoutExtension}", WallpaperKind.Photo, if (zh) "我的照片" else "My Photo") }
-        val auto = Wallpaper(AUTO, WallpaperKind.Auto, if (zh) "跟随 App" else "Follow App")
-        val live = Wallpaper(LIVE, WallpaperKind.Live, if (zh) "航拍" else "Aerial")
+            .map { Wallpaper("photo:${it.nameWithoutExtension}", WallpaperKind.Photo, app.getString(R.string.wp_my_photo)) }
+        val auto = Wallpaper(AUTO, WallpaperKind.Auto, app.getString(R.string.wp_follow_app))
+        val live = Wallpaper(LIVE, WallpaperKind.Live, app.getString(R.string.ss_aerial))
         // All of them in turn, then each on its own (#762); the pickers show the first only for two or more.
         val films = ScreensaverVideos.all(app)
         val videos = if (films.isEmpty()) emptyList() else
-            listOf(Wallpaper(VIDEOS, WallpaperKind.Video, if (zh) "我的视频 · 轮播" else "My Videos, In Turn")) +
+            listOf(Wallpaper(VIDEOS, WallpaperKind.Video, app.getString(R.string.wp_videos_rotate))) +
                 films.map { Wallpaper(VIDEO_PREFIX + it.id, WallpaperKind.Video, it.name.substringBeforeLast('.').ifBlank { it.name }) }
         val inputs = sources.map { (id, name) -> Wallpaper(SOURCE_PREFIX + id, WallpaperKind.Source, name) }
         items = listOf(live) + videos + daily + builtins + photos + auto + inputs
